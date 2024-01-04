@@ -20,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(poppins.className, "dark bg-backgroundMain")}>
+      <body
+        className={
+          (poppins.className,
+          " dark bg-backgroundMain transition-all duration-300 ease-linear")
+        }
+      >
         <NavBar />
         {children}
       </body>

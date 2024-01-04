@@ -1,5 +1,10 @@
 import React from "react";
+import { Toggle } from "./Toggle";
 
 export default function NavBar() {
-  return <div>NavBar</div>;
+  return (
+    <div>
+      NavBar <Toggle />
+    </div>
+  );
 }
