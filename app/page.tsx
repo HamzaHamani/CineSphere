@@ -15,6 +15,7 @@ export default async function Home() {
   // const data = await res.json();
   // console.log(data.results[0]);
   // console.log(data);
+  //! fix error with auth key in env, and how to use ggogle fonts with tailwid
   return (
     <main>
       {/* {data.results?.map((e: any) => (
