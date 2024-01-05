@@ -5,6 +5,7 @@ import NavBar from "@/components/Self/NavBar";
 
 const poppins = Poppins({
   subsets: ["latin"],
+  variable: "--font-poppins",
   weight: ["100", "200", "400", "600", "700", "800", "900"],
 });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body
         className={
           (poppins.className,
-          " dark bg-backgroundMain transition-all duration-300 ease-linear")
+          " dark bg-backgroundMain-50 transition-all duration-300 ease-linear")
         }
       >
         <NavBar />

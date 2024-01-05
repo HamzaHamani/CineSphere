@@ -3,11 +3,65 @@
 @tailwind utilities;
 
 .light {
-  --textMain: #050000;
-  --backgroundMain: #efeff0;
-  --primaryMain: #24a35b;
-  --secondaryMain: #94fae7;
-  --accentMain: #0ad6ff;
+  --textMain-50: #ffe5e5;
+  --textMain-100: #ffcccc;
+  --textMain-200: #ff9999;
+  --textMain-300: #ff6666;
+  --textMain-400: #ff3333;
+  --textMain-500: #ff0000;
+  --textMain-600: #cc0000;
+  --textMain-700: #990000;
+  --textMain-800: #660000;
+  --textMain-900: #330000;
+  --textMain-950: #1a0000;
+
+  --backgroundMain-50: #f2f2f3;
+  --backgroundMain-100: #e5e5e6;
+  --backgroundMain-200: #cacace;
+  --backgroundMain-300: #b0b0b5;
+  --backgroundMain-400: #96969c;
+  --backgroundMain-500: #7c7c83;
+  --backgroundMain-600: #636369;
+  --backgroundMain-700: #4a4a4f;
+  --backgroundMain-800: #313135;
+  --backgroundMain-900: #19191a;
+  --backgroundMain-950: #0c0c0d;
+
+  --primaryMain-50: #eafaf1;
+  --primaryMain-100: #d5f6e3;
+  --primaryMain-200: #abedc8;
+  --primaryMain-300: #82e3ac;
+  --primaryMain-400: #58da90;
+  --primaryMain-500: #2ed175;
+  --primaryMain-600: #25a75d;
+  --primaryMain-700: #1c7d46;
+  --primaryMain-800: #12542f;
+  --primaryMain-900: #092a17;
+  --primaryMain-950: #05150c;
+
+  --secondaryMain-50: #e7fefa;
+  --secondaryMain-100: #cefdf4;
+  --secondaryMain-200: #9efae9;
+  --secondaryMain-300: #6df8df;
+  --secondaryMain-400: #3cf6d4;
+  --secondaryMain-500: #0bf4c9;
+  --secondaryMain-600: #09c3a1;
+  --secondaryMain-700: #079279;
+  --secondaryMain-800: #056150;
+  --secondaryMain-900: #023128;
+  --secondaryMain-950: #011814;
+
+  --accentMain-50: #e5fbff;
+  --accentMain-100: #ccf6ff;
+  --accentMain-200: #99eeff;
+  --accentMain-300: #66e5ff;
+  --accentMain-400: #33ddff;
+  --accentMain-500: #00d4ff;
+  --accentMain-600: #00aacc;
+  --accentMain-700: #007f99;
+  --accentMain-800: #005566;
+  --accentMain-900: #002a33;
+  --accentMain-950: #00151a;
 
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
@@ -49,11 +103,65 @@
   }
 }
 .dark {
-  --textMain: #fffafa;
-  --backgroundMain: #0f0f10;
-  --primaryMain: #5cdb93;
-  --secondaryMain: #056b58;
-  --accentMain: #00ccf5;
+  --textMain-50: #1a0000;
+  --textMain-100: #330000;
+  --textMain-200: #660000;
+  --textMain-300: #990000;
+  --textMain-400: #cc0000;
+  --textMain-500: #ff0000;
+  --textMain-600: #ff3333;
+  --textMain-700: #ff6666;
+  --textMain-800: #ff9999;
+  --textMain-900: #ffcccc;
+  --textMain-950: #ffe5e5;
+
+  --backgroundMain-50: #0c0c0d;
+  --backgroundMain-100: #19191a;
+  --backgroundMain-200: #313135;
+  --backgroundMain-300: #4a4a4f;
+  --backgroundMain-400: #636369;
+  --backgroundMain-500: #7c7c83;
+  --backgroundMain-600: #96969c;
+  --backgroundMain-700: #b0b0b5;
+  --backgroundMain-800: #cacace;
+  --backgroundMain-900: #e5e5e6;
+  --backgroundMain-950: #f2f2f3;
+
+  --primaryMain-50: #05150c;
+  --primaryMain-100: #092a17;
+  --primaryMain-200: #12542f;
+  --primaryMain-300: #1c7d46;
+  --primaryMain-400: #25a75d;
+  --primaryMain-500: #2ed175;
+  --primaryMain-600: #58da90;
+  --primaryMain-700: #82e3ac;
+  --primaryMain-800: #abedc8;
+  --primaryMain-900: #d5f6e3;
+  --primaryMain-950: #eafaf1;
+
+  --secondaryMain-50: #011814;
+  --secondaryMain-100: #023128;
+  --secondaryMain-200: #056150;
+  --secondaryMain-300: #079279;
+  --secondaryMain-400: #09c3a1;
+  --secondaryMain-500: #0bf4c9;
+  --secondaryMain-600: #3cf6d4;
+  --secondaryMain-700: #6df8df;
+  --secondaryMain-800: #9efae9;
+  --secondaryMain-900: #cefdf4;
+  --secondaryMain-950: #e7fefa;
+
+  --accentMain-50: #00151a;
+  --accentMain-100: #002a33;
+  --accentMain-200: #005566;
+  --accentMain-300: #007f99;
+  --accentMain-400: #00aacc;
+  --accentMain-500: #00d4ff;
+  --accentMain-600: #33ddff;
+  --accentMain-700: #66e5ff;
+  --accentMain-800: #99eeff;
+  --accentMain-900: #ccf6ff;
+  --accentMain-950: #e5fbff;
 
   --background: 222.2 84% 4.9%;
   --foreground: 210 40% 98%;

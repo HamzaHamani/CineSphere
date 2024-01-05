@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { cache } from "react";
+import { cache, useEffect } from "react";
 
 export default async function Home() {
   // const res = await fetch(
@@ -15,7 +15,6 @@ export default async function Home() {
   // const data = await res.json();
   // console.log(data.results[0]);
   // console.log(data);
-
   return (
     <main>
       {/* {data.results?.map((e: any) => (
