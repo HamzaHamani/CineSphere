@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+// import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
   darkMode: ["class"],
   content: [
@@ -35,6 +35,10 @@ const config = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
+      fontFamily: {
+        pop: ["var(--font-poppins)"],
+        mono: ["var(--font-roboto-mono)"],
+      },
       colors: {
         textMain: {
           50: "var(--textMain-50)",

@@ -15,6 +15,8 @@ import {
 export function Toggle() {
   // const { setTheme } = useTheme();
   const [darkMode, setDarkMode] = React.useState(() => {
+    if (localStorage.getItem("theme") === null)
+      localStorage.setItem("theme", "dark");
     const theme = localStorage.getItem("theme");
     // Set default to dark if theme is not found or localStorage is empty
     return theme === "light" ? false : true;
@@ -48,7 +50,7 @@ export function Toggle() {
     <Button
       variant="outline"
       size="icon"
-      className=" "
+      className=" border-none shadow-none bg-backgroundMain-50 hover:bg-backgroundMain-100 "
       onClick={() => setDarkMode((value) => !value)}
     >
       {darkMode ? (
@@ -59,18 +61,5 @@ export function Toggle() {
 
       <span className="sr-only">Toggle theme</span>
     </Button>
-    // <DropdownMenu>
-    //   <DropdownMenuTrigger asChild>
-
-    //   </DropdownMenuTrigger>
-    //   <DropdownMenuContent align="end">
-    //     <DropdownMenuItem onClick={() => setDarkMode(false)}>
-    //       Light
-    //     </DropdownMenuItem>
-    //     <DropdownMenuItem onClick={() => setDarkMode(true)}>
-    //       Dark
-    //     </DropdownMenuItem>
-    //   </DropdownMenuContent>
-    // </DropdownMenu>
   );
 }

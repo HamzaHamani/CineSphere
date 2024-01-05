@@ -7,12 +7,13 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-around p-3 ">
+    <nav className="flex justify-around p-3">
       <h1 className="text-3xl font-bold">
-        <span className="text-primaryMain-500 font-extrabold">Cine</span>Sphere
+        <span className="font-mono  text-primaryMain-500">Cine</span>
+        Sphere
       </h1>
-      <ul className="flex items-center justify-center gap-8 cursor-pointer text-lg font-medium">
-        <li className="text-primaryMain-500">Home</li>
+      <ul className="flex cursor-pointer items-center justify-center gap-8 text-lg font-medium">
+        <li className="text-primaryMain-500 ">Home</li>
         <li>Watchlist</li>
         <li>About</li>
       </ul>

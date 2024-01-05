@@ -15,13 +15,13 @@ export default async function Home() {
   // const data = await res.json();
   // console.log(data.results[0]);
   // console.log(data);
-  //! fix error with auth key in env, and how to use ggogle fonts with tailwid
+  //TODO ! fix error with auth key in env, and how to use ggogle fonts with tailwid
   return (
     <main>
       {/* {data.results?.map((e: any) => (
         <p key={e.id}>{e.original_title}</p>
       ))} */}
-      <p>asd</p>
+      <p className="text-3xl">asd</p>
     </main>
   );
 }
