@@ -1,3 +1,4 @@
+import MainMovie from "@/app/_Parts/MainMovie";
 import Image from "next/image";
 import { cache, useEffect } from "react";
 
@@ -18,10 +19,7 @@ export default async function Home() {
   //TODO ! fix error with auth key in env, and how to use ggogle fonts with tailwid
   return (
     <main className="">
-      {/* {data.results?.map((e: any) => (
-        <p key={e.id}>{e.original_title}</p>
-      ))} */}
-      <p className="text-3xl">asd</p>
+      <MainMovie />
     </main>
   );
 }

@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <nav className="bg-textMain flex items-start justify-between p-8  font-mono">
-      <h1 className="text-textMain text-3xl font-bold">
-        <span className="font-mono  text-primaryMain-500">Cine</span>
+      <h1 className="text-3xl font-bold text-[#333333]">
+        <span className="font-mono  text-[#111111] ">Cine</span>
         Sphere
       </h1>
-      <ul className="text-bgMain flex cursor-pointer items-center justify-center gap-8 text-2xl font-medium">
-        <li className="text-[#FFC107] ">Home</li>
-        <li className="text-textMainHover">Watchlist</li>
+      <ul className="flex cursor-pointer items-center justify-center gap-8 text-2xl font-medium  text-[#444444]">
+        <li className="ligne text-[#111111]">Home</li>
+        <li className="">Watchlist</li>
         <li>About</li>
       </ul>
       <div className="flex items-center justify-center gap-5">
@@ -22,7 +22,7 @@ export default function NavBar() {
           <Search />
         </Link>
         {/* <Toggle /> */}
-        <Button>Get Started</Button>
+        <Button className="bg-bgMain hover:bg-bgMainHover">Get Started</Button>
         {/* <UserRound /> */}
       </div>
     </nav>
