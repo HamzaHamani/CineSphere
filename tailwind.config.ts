@@ -40,7 +40,11 @@ const config = {
         mono: ["var(--font-roboto-mono)"],
       },
       colors: {
-        textMain: {
+        bgMain: "var(--bgMain)",
+        bgMainHover: "var(--bgMainHover)",
+        textMain: "var(--textMain)",
+        textMainHover: "var(--textMainHover)",
+        texttMain: {
           50: "var(--textMain-50)",
           100: "var(--textMain-100)",
           200: "var(--textMain-200)",

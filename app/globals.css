@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 .light {
-  --textMain-50: #ffe5e5;
+  --bgMain: #111111;
+  --bgMainHover: #1a1a1a;
+  --textMain: #f5f5f5;
+  --textMainHover: #e5e5e6;
+
+  /* --textMain-50: #ffe5e5;
   --textMain-100: #ffcccc;
   --textMain-200: #ff9999;
   --textMain-300: #ff6666;
@@ -25,7 +30,7 @@
   --backgroundMain-700: #4a4a4f;
   --backgroundMain-800: #313135;
   --backgroundMain-900: #19191a;
-  --backgroundMain-950: #0c0c0d;
+  --backgroundMain-950: #0c0c0d; */
 
   --primaryMain-50: #eafaf1;
   --primaryMain-100: #d5f6e3;
@@ -103,6 +108,11 @@
   }
 }
 .dark {
+  --bgMain: #f5f5f5;
+  --bgMainHover: #e5e5e6;
+  --textMain: #111111;
+  --textMainHover: #1a1a1a;
+
   --textMain-50: #1a0000;
   --textMain-100: #330000;
   --textMain-200: #660000;

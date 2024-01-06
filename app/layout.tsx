@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${roboto_mono.variable} font-pop  dark bg-backgroundMain-50 transition-all duration-300 ease-linear `}
+        className={`${poppins.variable} ${roboto_mono.variable} bg-bgMain  light font-pop transition-all duration-300 ease-linear`}
       >
         <NavBar />
         {children}

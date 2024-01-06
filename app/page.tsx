@@ -17,7 +17,7 @@ export default async function Home() {
   // console.log(data);
   //TODO ! fix error with auth key in env, and how to use ggogle fonts with tailwid
   return (
-    <main>
+    <main className="">
       {/* {data.results?.map((e: any) => (
         <p key={e.id}>{e.original_title}</p>
       ))} */}
