@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto_Mono, Tektur } from "next/font/google";
+import { Poppins, Roboto_Mono, Tektur, Comfortaa } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Self/NavBar";
 export const metadata: Metadata = {
@@ -23,6 +23,11 @@ const tektur = Tektur({
   display: "swap",
   variable: "--font-tek",
 });
+const comfortaa = Comfortaa({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-comfortaa",
+});
 
 export default function RootLayout({
   children,
@@ -32,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${roboto_mono.variable} ${tektur.variable} bg-bgMain  light text-textMain font-pop transition-all duration-300 ease-linear`}
+        className={`${poppins.variable} ${roboto_mono.variable} ${tektur.variable} ${comfortaa.variable} bg-bgMain  light text-textMain font-pop transition-all duration-300 ease-linear`}
       >
         <NavBar />
         {children}

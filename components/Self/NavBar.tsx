@@ -18,7 +18,7 @@ export default function NavBar() {
         <li>About</li>
       </ul>
       <div className="flex items-center justify-center gap-5">
-        <Link className="text-textMain cursor-pointer" href={"/search"}>
+        <Link className="text-bgMain cursor-pointer" href={"/search"}>
           <Search />
         </Link>
         {/* <Toggle /> */}

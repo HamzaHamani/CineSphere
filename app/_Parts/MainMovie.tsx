@@ -12,7 +12,7 @@ export default function MainMovie() {
           <h1 className="text-textMain text-9xl font-bold leading-[100px]">
             Welcome.
           </h1>
-          <h1 className="text-textMain mt-3 w-[90%] text-9xl font-bold leading-[115px]">
+          <h1 className="text-textMain mt-3 w-[90%] text-9xl font-bold leading-[115px] ">
             Discover endless movies, TV shows, and all the insider info on casts
             and crews. <br></br>
             <span className="dive text-blueMain font-tek">Dive in now!</span>

@@ -39,6 +39,7 @@ const config = {
         pop: ["var(--font-poppins)"],
         mono: ["var(--font-roboto-mono)"],
         tek: ["var(--font-tek)"],
+        comf: ["var(--font-comfortaa)"],
       },
       colors: {
         bgMain: "var(--bgMain)",
