@@ -38,11 +38,13 @@ const config = {
       fontFamily: {
         pop: ["var(--font-poppins)"],
         mono: ["var(--font-roboto-mono)"],
+        tek: ["var(--font-tek)"],
       },
       colors: {
         bgMain: "var(--bgMain)",
         bgMainHover: "var(--bgMainHover)",
         textMain: "var(--textMain)",
+        blueMain: "var(--blueMain)",
         textMainHover: "var(--textMainHover)",
         texttMain: {
           50: "var(--textMain-50)",

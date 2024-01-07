@@ -1,7 +1,6 @@
 import MainMovie from "@/app/_Parts/MainMovie";
 import Image from "next/image";
 import { cache, useEffect } from "react";
-
 export default async function Home() {
   // const res = await fetch(
   //   "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter, Roboto_Mono } from "next/font/google";
+import { Poppins, Roboto_Mono, Tektur } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Self/NavBar";
 export const metadata: Metadata = {
@@ -18,6 +18,11 @@ const roboto_mono = Roboto_Mono({
   display: "swap",
   variable: "--font-roboto-mono",
 });
+const tektur = Tektur({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-tek",
+});
 
 export default function RootLayout({
   children,
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${roboto_mono.variable} bg-bgMain  light text-textMain font-pop transition-all duration-300 ease-linear`}
+        className={`${poppins.variable} ${roboto_mono.variable} ${tektur.variable} bg-bgMain  light text-textMain font-pop transition-all duration-300 ease-linear`}
       >
         <NavBar />
         {children}

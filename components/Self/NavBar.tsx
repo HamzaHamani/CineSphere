@@ -8,8 +8,8 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <nav className="bg-textMain flex items-start justify-between p-8  font-mono">
-      <h1 className="text-3xl font-bold text-[#333333]">
-        <span className="font-mono  text-[#111111] ">Cine</span>
+      <h1 className="font-tek  text-3xl  font-bold text-[#111111]">
+        <span className="text-blueMain font-extrabold uppercase">Cine</span>
         Sphere
       </h1>
       <ul className="flex cursor-pointer items-center justify-center gap-8 text-2xl font-medium  text-[#444444]">
