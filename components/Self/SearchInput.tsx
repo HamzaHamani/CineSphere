@@ -1,17 +1,15 @@
-import React from "react";
-
 export default function SearchInput() {
   return (
     <div>
-      <div className="flex rounded-full bg-secondaryMain px-2 w-full max-w-[600px]">
+      <div className="bg-secondaryMain flex w-full max-w-[600px] rounded-full px-2">
         <input
           type="text"
-          className="w-full bg-[#0d1829] flex bg-transparent pl-2 text-[#cccccc] outline-0"
+          className="flex w-full bg-[#0d1829] bg-transparent pl-2 text-[#cccccc] outline-0"
           placeholder="Search name movie or select options"
         />
         <button
           type="submit"
-          className="relative p-2 bg-[#0d1829] rounded-full"
+          className="relative rounded-full bg-[#0d1829] p-2"
         >
           <svg
             width="30px"

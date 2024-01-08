@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { Toggle } from "./Toggle";
 import { Button } from "../ui/button";
 import SearchInput from "./SearchInput";
 import { Search, UserRound } from "lucide-react";
