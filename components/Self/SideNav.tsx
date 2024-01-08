@@ -30,11 +30,25 @@ export function SideNav() {
 
           <ul className="mb-10 mt-4 flex flex-col gap-4 text-2xl">
             <Link href={"/home"}>
-              <li>Home</li>
+              <SheetClose asChild>
+                <li>Home</li>
+              </SheetClose>
             </Link>
-            <li className="text-gray-300">search</li>
-            <li className="text-gray-300">Watchlist</li>
-            <li className="text-gray-300">About</li>
+            <Link href={"/search"}>
+              <SheetClose asChild>
+                <li className="text-gray-300">Search</li>
+              </SheetClose>
+            </Link>
+            <Link href={"/watchList"}>
+              <SheetClose asChild>
+                <li className="text-gray-300">Watch list</li>
+              </SheetClose>
+            </Link>
+            <Link href={"/about"}>
+              <SheetClose asChild>
+                <li className="text-gray-300">About</li>
+              </SheetClose>
+            </Link>
           </ul>
         </div>
         <Separator className="my-4 mb-10" />
