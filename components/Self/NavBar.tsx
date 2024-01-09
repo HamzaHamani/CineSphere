@@ -4,15 +4,15 @@ import { Search, UserRound } from "lucide-react";
 import Link from "next/link";
 import { SideNav } from "./SideNav";
 
-export default function NavBar() {
+export default async function NavBar(request: Request) {
   return (
-    <nav className="flex items-start justify-between bg-textMain p-8  font-mono">
-      <h1 className="font-tek  text-3xl  font-bold text-[#111111]">
+    <nav className="flex items-start justify-between  bg-transparent  p-8 font-mono text-textMain">
+      <h1 className="font-tek  text-3xl  font-bold ">
         <span className="font-extrabold uppercase text-blueMain">Cine</span>
         Sphere
       </h1>
-      <ul className="flex cursor-pointer items-center justify-center gap-8 text-2xl font-medium text-[#444444]  lg:hidden">
-        <li className="ligne text-[#111111]">Home</li>
+      <ul className="flex cursor-pointer items-center justify-center gap-8 text-2xl font-medium lg:hidden">
+        <li className="ligne">Home</li>
         <li className="">Watchlist</li>
         <li>About</li>
       </ul>
