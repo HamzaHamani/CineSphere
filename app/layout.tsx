@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto_Mono, Tektur, Antic } from "next/font/google";
+import { Poppins, Rubik, Tektur, Antic } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Self/NavBar";
 export const metadata: Metadata = {
@@ -13,11 +13,6 @@ const poppins = Poppins({
   weight: ["100", "200", "400", "600", "700", "800", "900"],
 });
 
-const roboto_mono = Roboto_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-roboto-mono",
-});
 const tektur = Tektur({
   subsets: ["latin"],
   display: "swap",
@@ -30,6 +25,12 @@ const antic = Antic({
   variable: "--font-antic",
   weight: ["400"],
 });
+const rubik = Rubik({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-rubik",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export default function RootLayout({
   children,
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${roboto_mono.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
+        className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
       >
         <NavBar />
         {children}
