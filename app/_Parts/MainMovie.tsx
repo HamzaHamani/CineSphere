@@ -12,7 +12,7 @@ export default async function MainMovie() {
   );
   const { results } = await res.json();
 
-  const select = results[6];
+  const select = results[0];
   return (
     <div
       className="bg-red-30 relative  flex  h-[92vh]  flex-col items-start justify-start bg-cover bg-fixed saturate-50"
