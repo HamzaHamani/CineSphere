@@ -12,7 +12,7 @@ export default async function MainMovie() {
   );
   const { results } = await res.json();
 
-  const select = results[0];
+  const select = results[6];
   return (
     <div
       className="bg-red-30 relative  flex  h-[92vh]  flex-col items-start justify-start bg-cover bg-fixed saturate-50"
@@ -37,15 +37,25 @@ export default async function MainMovie() {
           </p>
           <span className="ligneLongs"></span>
         </div>
-        <h3 className="mb-4 text-lg italic">
+        {/* <h3 className="mb-4 text-lg italic">
           Anime/
           {select.release_date ? select.release_date : select.first_air_date}
           /3.5
-        </h3>
-        <h2 className="w-[60%] font-pop text-8xl font-extrabold ">
+        </h3> */}
+        <h2
+          className={`w-[55%] font-pop  font-extrabold ${
+            select.title.length <= 8
+              ? "text-9xl"
+              : select.title.length <= 12
+                ? "text-8xl"
+                : select.title.length <= 16
+                  ? "text-7xl"
+                  : "text-7xl"
+          }  `}
+        >
           {select.title}{" "}
         </h2>
-        <p className="mb-4 mt-6 w-[40%] text-base text-gray-300">
+        <p className="mb-4 mt-6 w-[40%] text-lg text-gray-300">
           {select.overview}
         </p>
         <div className="flex items-center  gap-4">
