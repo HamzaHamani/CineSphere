@@ -12,10 +12,11 @@ export default async function MainMovie() {
   );
   const { results } = await res.json();
 
+  // todo move image background to another files and add some animation while scrolling for the image OR NOT
   const select = results[0];
   return (
     <div
-      className="bg-red-30 relative  flex  h-[92vh]  flex-col items-start justify-start bg-cover bg-fixed saturate-50"
+      className="bg-red-30 relative  flex  h-[92vh]  flex-col items-start justify-start bg-cover  saturate-50"
       style={{
         backgroundImage: `url(${imageUrl}${select?.backdrop_path})`,
       }}
@@ -24,15 +25,15 @@ export default async function MainMovie() {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-bgMain via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-bgMain via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-bgMain via-transparent to-transparent"></div>
       </div>
       {/* black backdrop------------------------- */}
 
       <div className="z-50 mx-auto mt-36 flex w-[95%] flex-col gap-2 p-2">
         <div>
-          <p className="bg-blueMainHover mb-2 w-fit p-2.5 font-bold tracking-widest text-black text-textMain opacity-100">
+          <p className="mb-2 w-fit bg-blueMainHover p-2.5 font-bold tracking-widest text-black text-textMain opacity-100">
             #Random Pick
           </p>
           <span className="ligneLongs"></span>
@@ -60,7 +61,7 @@ export default async function MainMovie() {
         </p>
         <div className="flex items-center  gap-4">
           <Link href="/movie/:id">
-            <Button className="bg-blueMainHover flex gap-2 rounded-none px-5  py-8 text-lg text-textMain hover:bg-blueMain ">
+            <Button className="flex gap-2 rounded-none bg-blueMainHover px-5  py-8 text-lg text-textMain hover:bg-blueMain ">
               <span>
                 <Info className="w-5" />
               </span>{" "}
