@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins, Rubik, Tektur, Antic } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Self/NavBar";
-import Wrapper from "./_Parts/Wrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,15 +39,13 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Wrapper>
-      <html lang="en">
-        <body
-          className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
-        >
-          <NavBar />
-          {children}
-        </body>
-      </html>
-    </Wrapper>
+    <html lang="en">
+      <body
+        className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
+      >
+        <NavBar />
+        {children}
+      </body>
+    </html>
   );
 }
