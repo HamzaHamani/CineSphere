@@ -1,14 +1,13 @@
-import MainMovie from "@/app/_Parts/MainMovie";
+import LoginButton from "@/components/Self/LoginButton";
+import Homepart from "./_Parts/HomePart";
 export default async function Home() {
-  // const res = await fetch(
-  //   `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=2&sort_by=popularity.desc&api_key=${api_key}`,
-  // );
-  // const data = await res.json();
+  // https://api.kinocheck.com/#video , get movie from tmdb and pass it to this website api , we gonna take the yoube video id and pass it to the iframe of embed youtube
+  // https://api.kinocheck.de/movies?tmdb_id=299534&language=en
 
   return (
     <main className="">
-      <MainMovie />
-      <div className="h-screen">a</div>
+      <Homepart />
+      <LoginButton />
     </main>
   );
 }

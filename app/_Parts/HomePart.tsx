@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import "@/app/globals.css";
 export default function Homepart() {
   return (
     <div className=" bg-red-30 relative mx-auto flex h-[88vh] w-[90%]  items-center  justify-between ">

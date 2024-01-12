@@ -6,12 +6,12 @@ import { SideNav } from "./SideNav";
 
 export default function NavBar() {
   return (
-    <nav className="flex items-start justify-between  bg-transparent  p-5 font-mono text-textMain">
+    <nav className="flex items-start justify-between  bg-transparent  p-5  font-pop text-textMain">
       <h1 className="font-tek  text-2xl  font-bold ">
         <span className="font-extrabold uppercase text-blueMain">Cine</span>
         Sphere
       </h1>
-      <ul className="flex cursor-pointer items-center justify-center gap-8 text-xl font-medium lg:hidden">
+      <ul className="flex cursor-pointer items-center justify-center gap-8 font-pop text-xl font-medium  lg:hidden">
         <li className="ligne">Home</li>
         <li className="">Watchlist</li>
         <li>About</li>
@@ -21,7 +21,9 @@ export default function NavBar() {
           <Search />
         </Link>
         {/* <Toggle /> */}
-        <Button className="bg-bgMain hover:bg-bgMainHover">Get Started</Button>
+        <Button className="bg-blueMain font-bold  hover:bg-blueMainHover">
+          Get Started
+        </Button>
         {/* <UserRound /> */}
       </div>
       {/* --------------------SIDE NAV ------------------ */}
