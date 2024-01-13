@@ -17,10 +17,9 @@ export default function NavBar() {
         <li>About</li>
       </ul>
       <div className="flex items-center justify-center gap-5 lg:hidden">
-        <Link className="cursor-pointer text-bgMain" href={"/search"}>
+        {/* <Link className="cursor-pointer text-textMain" href={"/search"}>
           <Search />
-        </Link>
-        {/* <Toggle /> */}
+        </Link> */}
         <Link href={"/sign-in"}>
           <Button className="bg-blueMain font-bold  hover:bg-blueMainHover">
             Get Started

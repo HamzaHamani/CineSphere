@@ -53,9 +53,11 @@ export function SideNav() {
         </div>
         <Separator className="my-4 mb-10" />
         <SheetFooter>
-          <Button className="bg-textMain font-bold text-bgMain transition-all duration-75 ease-linear hover:bg-textMainHover">
-            Get Started
-          </Button>
+          <Link href={"/sign-in"}>
+            <Button className="bg-textMain font-bold text-bgMain transition-all duration-75 ease-linear hover:bg-textMainHover">
+              Get Started
+            </Button>
+          </Link>
         </SheetFooter>
       </SheetContent>
     </Sheet>
