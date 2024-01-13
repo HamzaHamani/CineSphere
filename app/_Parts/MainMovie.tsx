@@ -8,7 +8,7 @@ export default async function MainMovie() {
   const api_key = process.env.TMDB_API_KEY;
   const res = await fetch(
     `https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=${api_key}`,
-    { next: { revalidate: 86400000 } },
+    { next: { revalidate: 86400 } },
   );
   const { results } = await res.json();
 
