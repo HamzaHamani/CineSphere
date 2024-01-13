@@ -1,4 +1,4 @@
-import MainMovie from "../../_Parts/MainMovie";
+import MainMovie from "../../../_Parts/MainMovie";
 
 export default function page() {
   // <div class="bg-fixed BG-COVER ..." style="background-image: url(...)"></div>

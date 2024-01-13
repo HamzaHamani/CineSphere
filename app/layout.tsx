@@ -18,6 +18,7 @@ const tektur = Tektur({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-tek",
+  adjustFontFallback: false,
 });
 
 const antic = Antic({
@@ -40,13 +41,11 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      
-        <body
-          className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
-        >
-          <NavBar />
-          {children}
-        </body>
+      <body
+        className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

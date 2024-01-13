@@ -21,9 +21,11 @@ export default function NavBar() {
           <Search />
         </Link>
         {/* <Toggle /> */}
-        <Button className="bg-blueMain font-bold  hover:bg-blueMainHover">
-          Get Started
-        </Button>
+        <Link href={"/sign-in"}>
+          <Button className="bg-blueMain font-bold  hover:bg-blueMainHover">
+            Get Started
+          </Button>
+        </Link>
         {/* <UserRound /> */}
       </div>
       {/* --------------------SIDE NAV ------------------ */}
