@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Poppins, Rubik, Tektur, Antic } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Self/NavBar";
-import { getServerSession } from "next-auth";
-import Provider from "@/app/_Parts/Provider/Provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,17 +38,15 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const session = await getServerSession();
   return (
     <html lang="en">
-      <Provider>
+      
         <body
           className={`${poppins.variable} ${rubik.variable} ${tektur.variable} ${antic.variable} light  bg-bgMain font-pop text-textMain transition-all duration-300 ease-linear`}
         >
           <NavBar />
           {children}
         </body>
-      </Provider>
     </html>
   );
 }
