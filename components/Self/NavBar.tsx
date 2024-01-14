@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
 import SearchInput from "./SearchInput";
-import { Search, UserRound } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import { SideNav } from "./SideNav";
 
@@ -25,7 +25,6 @@ export default function NavBar() {
             Get Started
           </Button>
         </Link>
-        {/* <UserRound /> */}
       </div>
       {/* --------------------SIDE NAV ------------------ */}
       <div className="hidden lg:block">
